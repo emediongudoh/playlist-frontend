@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General styles */
+
+:root {
+    --brand-color: #0284c7;
+    --chinese-black: #131417;
+    --columbia-blue: #cbd5e1;
+}
+
+*::selection {
+    background: var(--brand-color);
+    color: var(--chinese-black);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--brand-color) var(--chinese-black);
+}
+
+body {
+    min-height: 100vh;
+    background: var(--chinese-black);
+    color: var(--columbia-blue);
+}
